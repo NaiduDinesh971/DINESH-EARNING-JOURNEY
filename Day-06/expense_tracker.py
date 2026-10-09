@@ -29,7 +29,7 @@ for expense in expenses:
 average = total / len(expenses)
 
 print("==============================")
-print("  PERSONAL EXPENSE TRACKER  ")
+print("  PERSONAL EXPENSE TRACKER    ")
 print("==============================")
 
 for expense in expenses:

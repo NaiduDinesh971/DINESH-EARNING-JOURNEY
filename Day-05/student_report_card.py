@@ -4,7 +4,7 @@ roll_no = input("Enter roll number: ")
 num_subjects = int(input("Enter number of subjects: "))
 
 if (num_subjects > 0):
-    print("Number of subjects:", num_subjects)
+    print("Number of subjects: ", num_subjects)
 else:
     print("Number of subjects must be greater than 0.")
 
@@ -18,7 +18,7 @@ for i in range(num_subjects):
     while True:
         mark = float(input(f"Enter marks for {subject}: "))
 
-        if 0 <= mark <= 100:
+        if (0 <= mark <= 100):
             marks.append(mark)
             break
         else:
@@ -34,18 +34,18 @@ student = {
 total = sum(student["marks"])
 average = total / len(student["marks"])
 
-if average >= 90:
+if (average >= 90):
     grade = "A"
-elif average >= 80:
+elif (average >= 80):
     grade = "B"
-elif average >= 70:
+elif (average >= 70):
     grade = "C"
-elif average >= 60:
+elif (average >= 60):
     grade = "D"
 else:
     grade = "F"
 
-if average >= 40:
+if (average >= 40):
     result = "Pass"
 else:
     result = "Fail"
