@@ -34,7 +34,7 @@ for expense in expenses:
     category = expense["category"]
     amount = expense["amount"]
 
-    if category in category_totals:
+    if (category in category_totals):
            category_totals[category] += expense["amount"]
     else:
         category_totals[category] = expense["amount"]
